@@ -1,0 +1,67 @@
+{
+  "container": {
+    "params": {
+      "padding": {
+        "top": 10,
+        "bottom": 10,
+        "end": 10,
+        "start": 10
+      },
+      "radius": 18,
+      "type": "CARD"
+    },
+    "items": [
+      {
+        "container": {
+          "params": {
+            "type": "COLUMN"
+          },
+          "items": [
+            {
+              "image": {
+                "height": 0,
+                "width": 200,
+                "path": "http://url"
+              }
+            },
+            {
+              "spacer": {
+                "width": 0,
+                "height": 24
+              }
+            },
+            {
+              "container": {
+                "params": {
+                  "type": "ROW"
+                },
+                "items": [
+                  {
+                    "text": {
+                      "value": "A custom Store",
+                      "size": 18,
+                      "weight": "SEMI_BOLD"
+                    }
+                  },
+                  {
+                    "spacer": {
+                      "width": 24,
+                      "height": 0
+                    }
+                  },
+                  {
+                    "text": {
+                      "value": "A custom Store",
+                      "size": 16,
+                      "weight": "NORMAL"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
