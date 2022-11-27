@@ -1,70 +1,67 @@
 {
-  "container": {
-    "params": {
-      "padding": {
-        "top": 10,
-        "bottom": 10,
-        "end": 10,
-        "start": 10
-      },
-      "radius": 18,
-      "type": "COLUMN"
+  "column": {
+    "padding": {
+      "top": 16,
+      "bottom": 16,
+      "end": 16,
+      "start": 16
     },
+    "height": 300,
+    "radius": 18,
     "items": [
       {
-        "container": {
-          "params": {
-            "type": "CARD"
-          },
+        "card": {
+          "width": -2,
           "items": [
             {
-              "container": {
-                "params": {
-                  "type": "ROW"
-                },
+              "row": {
+                "width": -2,
                 "items": [
                   {
                     "image": {
-                      "height": 100,
-                      "width": 100,
-                      "path": "https://picsum.photos/500"
+                      "height": 120,
+                      "width": 120,
+                      "path": "https://picsum.photos/200"
                     }
                   },
                   {
                     "spacer": {
-                      "width": 20,
-                      "height": 24
+                      "width": 8,
+                      "height": 1
                     }
                   },
                   {
-                    "container": {
-                      "params": {
-                        "type": "COLUMN"
+                    "column": {
+                      "padding": {
+                        "top": 8,
+                        "bottom": 8,
+                        "end": 8,
+                        "start": 8
                       },
                       "items": [
                         {
                           "text": {
                             "value": "A title here",
-                            "size": 18,
+                            "size": 24,
                             "weight": "BOLD"
                           }
                         },
                         {
                           "spacer": {
                             "width": 24,
-                            "height": 20
+                            "height": 4
                           }
                         },
                         {
                           "text": {
                             "value": "Some description there",
-                            "size": 16,
+                            "size": 18,
                             "weight": "SEMI_BOLD"
                           }
                         },
                         {
                           "spacer": {
-                            "height": 4,
+                            "height": 2,
                             "width": 0
                           }
                         },
@@ -91,59 +88,54 @@
         }
       },
       {
-        "container": {
-          "params": {
-            "type": "CARD"
-          },
+        "card": {
           "items": [
             {
-              "container": {
-                "params": {
-                  "type": "COLUMN"
-                },
+              "column": {
                 "items": [
                   {
                     "image": {
                       "height": 100,
-                      "width": 100,
+                      "width": -1,
                       "path": "https://picsum.photos/500"
-                    }
-                  },
-                  {
-                    "spacer": {
-                      "width": 20,
-                      "height": 24
-                    }
-                  },
-                  {
-                    "container": {
-                      "params": {
-                        "type": "ROW"
+                    },
+                    "column": {
+                      "padding": {
+                        "top": 8,
+                        "bottom": 8,
+                        "end": 8,
+                        "start": 8
                       },
                       "items": [
                         {
+                          "spacer": {
+                            "width": 20,
+                            "height": 8
+                          }
+                        },
+                        {
                           "text": {
                             "value": "A title here",
-                            "size": 18,
+                            "size": 24,
                             "weight": "BOLD"
                           }
                         },
                         {
                           "spacer": {
                             "width": 24,
-                            "height": 20
+                            "height": 4
                           }
                         },
                         {
                           "text": {
                             "value": "Some description there",
-                            "size": 16,
+                            "size": 18,
                             "weight": "SEMI_BOLD"
                           }
                         },
                         {
                           "spacer": {
-                            "height": 4,
+                            "height": 2,
                             "width": 0
                           }
                         },
@@ -155,6 +147,78 @@
                           }
                         }
                       ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "spacer": {
+          "width": 0,
+          "height": 8
+        }
+      },
+      {
+        "card": {
+          "width": -2,
+          "items": [
+            {
+              "row": {
+                "width": -2,
+                "items": [
+                  {
+                    "column": {
+                      "padding": {
+                        "top": 8,
+                        "bottom": 8,
+                        "end": 8,
+                        "start": 8
+                      },
+                      "items": [
+                        {
+                          "text": {
+                            "value": "A title here",
+                            "size": 24,
+                            "weight": "BOLD"
+                          }
+                        },
+                        {
+                          "spacer": {
+                            "width": 24,
+                            "height": 4
+                          }
+                        },
+                        {
+                          "text": {
+                            "value": "Some description there",
+                            "size": 18,
+                            "weight": "SEMI_BOLD"
+                          }
+                        },
+                        {
+                          "text": {
+                            "value": "Some description there",
+                            "size": 16,
+                            "weight": "NORMAL"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "spacer": {
+                      "width": 8,
+                      "height": 1
+                    }
+                  },
+                  {
+                    "image": {
+                      "height": 120,
+                      "width": 120,
+                      "path": "https://picsum.photos/500"
                     }
                   }
                 ]
