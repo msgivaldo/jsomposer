@@ -1,7 +1,10 @@
 package dev.givaldo.appapp.parser
 
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.material.Icon
+import androidx.compose.material.IconButton
 import androidx.compose.material.Text
+import androidx.compose.material.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
@@ -13,6 +16,7 @@ import dev.givaldo.appapp.model.component.AppSpacer
 import dev.givaldo.appapp.model.component.AppText
 import dev.givaldo.appapp.model.component.AppText.AppFontWeight
 import dev.givaldo.appapp.model.component.AppText.AppFontWeight.*
+import dev.givaldo.appapp.model.component.AppTopBar
 
 @Composable
 fun AppText.ComposeText(
@@ -44,6 +48,26 @@ fun AppSpacer.ComposeSpacer(
 ) {
     Spacer(
         modifier = modifier.appModifier(params)
+    )
+}
+
+@Composable
+fun AppTopBar.ComposeAppbar(
+    modifier: Modifier = Modifier
+) {
+    TopAppBar(
+        title = {
+            Text(text = title.orEmpty())
+        },
+        modifier = modifier.appModifier(params),
+        navigationIcon = {
+            IconButton(onClick = {}) {
+                Icon(
+                    imageVector = navIcon.composeNavIcon(),
+                    contentDescription = navIcon.description
+                )
+            }
+        }
     )
 }
 

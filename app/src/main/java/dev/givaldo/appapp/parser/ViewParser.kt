@@ -6,6 +6,7 @@ import dev.givaldo.appapp.model.common.AppView
 import dev.givaldo.appapp.model.component.AppImage
 import dev.givaldo.appapp.model.component.AppSpacer
 import dev.givaldo.appapp.model.component.AppText
+import dev.givaldo.appapp.model.component.AppTopBar
 import dev.givaldo.appapp.model.container.AppCard
 import dev.givaldo.appapp.model.container.AppColumn
 import dev.givaldo.appapp.model.container.AppContainer
@@ -14,6 +15,7 @@ import dev.givaldo.appapp.model.container.AppRow
 @Composable
 fun AppView.AppCompose() {
     when (this) {
+        is AppTopBar -> ComposeAppbar()
         is AppContainer -> AppCompose()
         is AppText -> ComposeText()
         is AppImage -> ComposeImage()
@@ -29,7 +31,8 @@ private fun List<AppView>.AppCompose() {
 
 @Composable
 private fun AppContainer.AppCompose(
-    modifier: Modifier = Modifier) {
+    modifier: Modifier = Modifier
+) {
     when (this) {
         is AppCard -> ComposeCard(modifier) {
             items.AppCompose()

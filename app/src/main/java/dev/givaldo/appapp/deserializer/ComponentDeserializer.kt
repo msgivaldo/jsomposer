@@ -13,9 +13,10 @@ fun Any.appView(): List<AppView> {
 private fun Map<*, Map<*, *>>.appView(): List<AppView> {
     return map {
         when (it.key) {
-            "card"-> it.value.appCard()
-            "column"-> it.value.appColumn()
-            "row"-> it.value.appRow()
+            "appbar" -> it.value.appTopBar()
+            "card" -> it.value.appCard()
+            "column" -> it.value.appColumn()
+            "row" -> it.value.appRow()
             "spacer" -> it.value.appSpacer()
             "text" -> it.value.appText()
             "image" -> it.value.appImage()
@@ -23,6 +24,27 @@ private fun Map<*, Map<*, *>>.appView(): List<AppView> {
         }
     }
 }
+
+
+fun Map<*, *>.appTopBar(): AppTopBar {
+    return AppTopBar(
+        params = appParams,
+        navIcon = navIcon,
+        title = navTitle
+    )
+}
+
+val Map<*, *>.navIcon: AppTopBar.NavIcon
+    get() {
+        return try {
+            AppTopBar.NavIcon.valueOf(this["nav_icon"].string)
+        } catch (exception: Exception) {
+            AppTopBar.NavIcon.BACK
+        }
+    }
+
+val Map<*, *>.navTitle: String?
+    get() = this["title"]?.string
 
 
 private fun Map<*, *>.appText(): AppText {

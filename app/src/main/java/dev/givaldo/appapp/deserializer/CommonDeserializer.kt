@@ -12,8 +12,8 @@ val Map<*, *>?.width: Float
 val Map<*, *>?.height: Float
     get() = this?.get("height").float
 
-val Map<*, *>?.background: String
-    get() = this?.get("background").string
+val Map<*, *>?.background: String?
+    get() = this?.get("background")?.string
 
 val Map<*, *>?.dimens: AppDimens
     get() {

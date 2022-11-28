@@ -1,7 +1,9 @@
 package dev.givaldo.appapp.parser
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import dev.givaldo.appapp.model.common.AppParams
 
@@ -9,6 +11,7 @@ fun Modifier.appModifier(appParams: AppParams?) = this
     .composeWidth(appParams)
     .composeHeight(appParams)
     .composePadding(appParams)
+    .composeBackground(appParams)
 
 fun Modifier.composeWidth(
     appParams: AppParams?
@@ -40,3 +43,17 @@ fun Modifier.composePadding(
     )
     return this.padding(values)
 }
+
+fun Modifier.composeBackground(
+    appParams: AppParams?
+): Modifier {
+    val color = appParams?.background?.color ?: return this
+    return this.background(color = color)
+}
+
+private val String.color
+    get() = try {
+        Color(android.graphics.Color.parseColor(this))
+    } catch (exception: Exception) {
+        null
+    }
