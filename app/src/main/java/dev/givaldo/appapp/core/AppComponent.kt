@@ -1,8 +1,7 @@
-package dev.givaldo.appapp.model.component
+package dev.givaldo.appapp.core
 
 import dev.givaldo.appapp.model.common.AppParams
-import dev.givaldo.appapp.model.common.AppView
 
 abstract class AppComponent(
     open val params: AppParams
-) : AppView()
+) : AppView

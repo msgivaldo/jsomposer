@@ -1,5 +1,6 @@
-package dev.givaldo.appapp.model.component
+package dev.givaldo.appapp.model.component.topbar
 
+import dev.givaldo.appapp.core.AppComponent
 import dev.givaldo.appapp.model.common.AppParams
 
 data class AppTopBar(
@@ -12,3 +13,4 @@ data class AppTopBar(
         BACK("back"), CLOSE("close")
     }
 }
+

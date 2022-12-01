@@ -11,13 +11,10 @@ import androidx.compose.material.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.lifecycle.ViewModel
-import com.google.gson.Gson
 import dev.givaldo.appapp.R
-import dev.givaldo.appapp.deserializer.appView
-import dev.givaldo.appapp.parser.AppCompose
+import dev.givaldo.appapp.core.AppScreen
 import dev.givaldo.appapp.presentation.ui.theme.AppAppTheme
 
 class MainViewModel : ViewModel() {
@@ -32,11 +29,9 @@ class MainViewModel : ViewModel() {
 
 var globalApplication: Application? = null
 
-
 class MainActivity : ComponentActivity() {
 
     private val viewModel: MainViewModel by viewModels()
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -57,10 +52,6 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Greeting(json: String) {
-    val map = remember { Gson().fromJson(json, Map::class.java) }
-
-    map.appView().forEach {
-        it.AppCompose()
-    }
+    AppScreen(json)
 }
 

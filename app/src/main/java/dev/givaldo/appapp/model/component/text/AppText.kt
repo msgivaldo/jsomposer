@@ -1,5 +1,6 @@
-package dev.givaldo.appapp.model.component
+package dev.givaldo.appapp.model.component.text
 
+import dev.givaldo.appapp.core.AppComponent
 import dev.givaldo.appapp.model.common.AppParams
 
 data class AppText(
