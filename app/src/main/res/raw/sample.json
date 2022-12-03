@@ -6,7 +6,20 @@
     "items": [
       {
         "appbar": {
-          "title": "App App APp"
+          "title": "App App App"
+        }
+      },
+      {
+        "spacer": {
+          "height": 8
+        }
+      },
+      {
+        "button": {
+          "text": "App Button Text",
+          "background": "#F3F3F3",
+          "width": -2,
+          "height": 46
         }
       },
       {

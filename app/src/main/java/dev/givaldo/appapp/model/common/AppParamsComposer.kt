@@ -43,7 +43,7 @@ object AppParamsComposer {
         return this.background(color = color)
     }
 
-    private val String.color
+    val String.color: Color?
         get() = try {
             Color(android.graphics.Color.parseColor(this))
         } catch (exception: Exception) {

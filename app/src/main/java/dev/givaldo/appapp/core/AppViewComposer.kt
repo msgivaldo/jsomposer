@@ -1,6 +1,8 @@
 package dev.givaldo.appapp.core
 
 import androidx.compose.runtime.Composable
+import dev.givaldo.appapp.model.component.button.AppButton
+import dev.givaldo.appapp.model.component.button.AppButtonComposer
 import dev.givaldo.appapp.model.component.image.AppImage
 import dev.givaldo.appapp.model.component.image.AppImageContainerComposer
 import dev.givaldo.appapp.model.component.spacer.AppSpacer
@@ -27,6 +29,7 @@ fun ComposerAppView(appView: AppView) {
         is AppImage -> AppImageContainerComposer.CreateComponent(appComponent = appView)
         is AppSpacer -> AppSpacerContainerComposer.CreateComponent(appComponent = appView)
         is AppContainer -> ComposerAppContainer(appContainer = appView)
+        is AppButton -> AppButtonComposer.CreateComponent(appComponent = appView)
     }
 }
 

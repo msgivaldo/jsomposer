@@ -1,5 +1,6 @@
 package dev.givaldo.appapp.core
 
+import dev.givaldo.appapp.model.component.button.AppButtonDeserializer
 import dev.givaldo.appapp.model.component.image.AppImageDeserializer
 import dev.givaldo.appapp.model.component.spacer.AppSpacerDeserializer
 import dev.givaldo.appapp.model.component.text.AppTextDeserializer
@@ -19,6 +20,7 @@ object AppViewDeserializer {
             AppCardDeserializer,
             AppColumnDeserializer,
             AppRowDeserializer,
+            AppButtonDeserializer,
         )
 
     fun deserializeMap(value: Map<*, *>?): List<AppView> {
