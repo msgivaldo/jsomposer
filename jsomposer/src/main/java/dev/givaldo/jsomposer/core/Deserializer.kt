@@ -1,7 +1,9 @@
 package dev.givaldo.jsomposer.core
 
 import androidx.compose.runtime.Composable
-import dev.givaldo.jsomposer.container.AppContainer
+import dev.givaldo.jsomposer.core.app.AppComponent
+import dev.givaldo.jsomposer.core.app.AppView
+import dev.givaldo.jsomposer.view.container.AppContainer
 
 interface Deserializer<out T : AppView> {
     val key: String

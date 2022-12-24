@@ -1,0 +1,273 @@
+{
+  "column": {
+    "height": -2,
+    "arrangement": "TOP",
+    "background": "#F0F0F0",
+    "items": [
+      {
+        "appbar": {
+          "title": "App App App"
+        }
+      },
+      {
+        "spacer": {
+          "height": 8
+        }
+      },
+      {
+        "button": {
+          "text": "App Button Text",
+          "width": -2,
+          "height": 46
+        }
+      },
+      {
+        "column": {
+          "padding": {
+            "top": 16,
+            "bottom": 16,
+            "end": 16,
+            "start": 16
+          },
+          "height": -2,
+          "items": [
+            {
+              "card": {
+                "width": -2,
+                "radius": 16,
+                "items": [
+                  {
+                    "row": {
+                      "arrangement": "START",
+                      "width": -2,
+                      "items": [
+                        {
+                          "image": {
+                            "height": 120,
+                            "width": 120,
+                            "path": "https://picsum.photos/200"
+                          }
+                        },
+                        {
+                          "spacer": {
+                            "width": 8,
+                            "height": 1
+                          }
+                        },
+                        {
+                          "column": {
+                            "arrangement": "START",
+                            "padding": {
+                              "top": 8,
+                              "bottom": 8,
+                              "end": 8,
+                              "start": 8
+                            },
+                            "items": [
+                              {
+                                "text": {
+                                  "value": "A title here",
+                                  "size": 24,
+                                  "weight": "BOLD"
+                                }
+                              },
+                              {
+                                "spacer": {
+                                  "width": 24,
+                                  "height": 4
+                                }
+                              },
+                              {
+                                "text": {
+                                  "value": "Some description there",
+                                  "size": 18,
+                                  "weight": "SEMI_BOLD"
+                                }
+                              },
+                              {
+                                "spacer": {
+                                  "height": 2,
+                                  "width": 0
+                                }
+                              },
+                              {
+                                "text": {
+                                  "value": "Some description there",
+                                  "size": 16,
+                                  "weight": "NORMAL"
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "spacer": {
+                "width": 0,
+                "height": 8
+              }
+            },
+            {
+              "card": {
+                "radius": 8,
+                "items": [
+                  {
+                    "column": {
+                      "padding": {
+                        "top": 0,
+                        "bottom": 8,
+                        "end": 0,
+                        "start": 0
+                      },
+                      "arrangement": "END",
+                      "items": [
+                        {
+                          "image": {
+                            "height": 100,
+                            "width": -1,
+                            "path": "https://picsum.photos/500"
+                          },
+                          "column": {
+                            "arrangement": "END",
+                            "padding": {
+                              "top": 8,
+                              "bottom": 8,
+                              "end": 8,
+                              "start": 8
+                            },
+                            "items": [
+                              {
+                                "spacer": {
+                                  "width": 20,
+                                  "height": 8
+                                }
+                              },
+                              {
+                                "text": {
+                                  "value": "A title here",
+                                  "size": 24,
+                                  "weight": "BOLD"
+                                }
+                              },
+                              {
+                                "spacer": {
+                                  "width": 24,
+                                  "height": 4
+                                }
+                              },
+                              {
+                                "text": {
+                                  "value": "Some description there",
+                                  "size": 18,
+                                  "weight": "SEMI_BOLD"
+                                }
+                              },
+                              {
+                                "spacer": {
+                                  "height": 2,
+                                  "width": 0
+                                }
+                              },
+                              {
+                                "text": {
+                                  "value": "Some description there",
+                                  "size": 16,
+                                  "weight": "NORMAL"
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "spacer": {
+                "width": 0,
+                "height": 8
+              }
+            },
+            {
+              "card": {
+                "radius": 32,
+                "width": -2,
+                "items": [
+                  {
+                    "row": {
+                      "arrangement": "START",
+                      "width": -2,
+                      "items": [
+                        {
+                          "column": {
+                            "arrangement": "START",
+                            "width": -1,
+                            "padding": {
+                              "top": 8,
+                              "bottom": 8,
+                              "end": 8,
+                              "start": 16
+                            },
+                            "items": [
+                              {
+                                "text": {
+                                  "value": "A title here",
+                                  "size": 24,
+                                  "weight": "BOLD"
+                                }
+                              },
+                              {
+                                "spacer": {
+                                  "width": 24,
+                                  "height": 4
+                                }
+                              },
+                              {
+                                "text": {
+                                  "value": "Some description there",
+                                  "size": 18,
+                                  "weight": "SEMI_BOLD"
+                                }
+                              },
+                              {
+                                "text": {
+                                  "value": "Some description there",
+                                  "size": 16,
+                                  "weight": "NORMAL"
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "spacer": {
+                            "width": 8,
+                            "height": 1
+                          }
+                        },
+                        {
+                          "image": {
+                            "height": 120,
+                            "width": -2,
+                            "path": "https://picsum.photos/500"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

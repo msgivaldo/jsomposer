@@ -1,4 +1,4 @@
-package dev.givaldo.appapp.core
+package dev.givaldo.jsomposer.core
 
 val Any?.string: String
     get() = this?.toString().orEmpty()
